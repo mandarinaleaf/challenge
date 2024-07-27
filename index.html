@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de texto - Challenge de Alura</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="Logo.png" alt="Logo">
+  </header>
+  <div class="container">
+    <div class="columna1">
+      <textarea id="traducir" placeholder="Ingrese el texto aquí"></textarea>
+      <div class="instrucciones">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+          <path fill="currentColor" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2"/>
+        </svg>
+        <span>Solo letras minúsculas y sin acentos</span>
+      </div>
+      <div class="botones">
+        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="limpiar()">Limpiar</button>
+        <button onclick="desencriptar()">Desencriptar</button>
+      </div>
+
+    </div>
+    <div class="columna2">
+      <div class="resultado-container">
+        <div class="resultado">
+          <img src="muneco.png" alt="Imagen por defecto">
+          <p>Ningún mensaje fue encontrado</p>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <textarea id="resultadonew" readonly></textarea>
+            <div class="boton__copiar"><button onclick="copiar()">Copiar</button>
+            </div>
+    </div>
+    </div>
+  </div>
+</body>
+<footer class="footer__credito">
+    Creado por Claudia Ocampo
+</footer>
+</html>
